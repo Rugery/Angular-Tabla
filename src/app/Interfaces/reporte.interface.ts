@@ -1,16 +1,24 @@
 export interface Reporte {
-    PkusrReporte: string;
-    FechaReporte: string; // Preferiblemente usar tipo Date si es posible
-    FkregistroLomb: string;
-    FktipoReporte: string;
-    oFKTipoReporte: {
-        NomTipoReporte: string; 
-    };
+  PkusrReporte: string;
+  FechaReporte: string;
+  FkregistroLomb: string;
+  FktipoReporte: string;
+  oFKTipoReporte: {
+    NomTipoReporte: string;
+  };
+  oConsumoRecursos: ConsumoRecurso[];
+  oEventoSistemas: EventoSistema[];
+  oLombrizs: Lombriz[];
+  oMantenimientos: Mantenimiento[];
+  oSustratos: Sustrato[];
+  detalleVisible?: boolean;
+  detalles: {
     oConsumoRecursos: ConsumoRecurso[];
     oEventoSistemas: EventoSistema[];
     oLombrizs: Lombriz[];
     oMantenimientos: Mantenimiento[];
     oSustratos: Sustrato[];
+  };
 }
 
 export interface ConsumoRecurso {
