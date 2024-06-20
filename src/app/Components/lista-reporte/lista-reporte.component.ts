@@ -50,6 +50,11 @@ export class ListaReporteComponent implements OnInit{
     );
   }
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+  
   toggleDetalle(reporte: Reporte) {
     this.expandedElement = this.expandedElement === reporte ? null : reporte;
     console.log(this.expandedElement);  // Para depuración

@@ -8,7 +8,7 @@ import { catchError, map, throwError } from 'rxjs';
 })
 export class ReporteService {
   apiUrl = 'http://localhost:5240/api/Lombricultivo/ListaReportePorUsuario';
-  token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOlsiMzY4MmQ1MWMtNjc1OS00Nzc2LTkyNTQtZTBkOTI5YzZhOWE2IiwiYWxhbkBnbWFpbC5jb20iXSwibmJmIjoxNzE4ODUxODM1LCJleHAiOjE3MTg4NTQ4MzUsImlhdCI6MTcxODg1MTgzNX0.FcGon-P1w81ZSBRM_hsN0W1akabCBxmuT4647fFzLPE';
+  token = '';
   constructor(private httpClient:HttpClient) { }
   
   ngOnInit() {
