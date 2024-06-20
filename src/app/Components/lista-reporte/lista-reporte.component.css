@@ -1,0 +1,19 @@
+.mat-row.expanded-row {
+    background-color: #f5f5f5;
+  }
+  
+  .mat-row.detail-row {
+    display: none;
+  }
+  
+  .mat-row.expanded-row + .mat-row.detail-row {
+    display: table-row;
+  }
+  
+  .expanded-row-content {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
